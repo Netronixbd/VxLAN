@@ -1,0 +1,8 @@
+flowchart TB
+  HA["Host A: 192.168.100.11/24"]
+  A["VTEP A: 10.255.0.11"]
+  B["VTEP B: 10.255.0.12"]
+  HB["Host B: 192.168.100.12/24"]
+  HA -->|"Tagged VLAN 100"| A
+  A <-->|"Routed link 10.0.12.0/30; VXLAN VNI 10100"| B
+  B -->|"Tagged VLAN 100"| HB

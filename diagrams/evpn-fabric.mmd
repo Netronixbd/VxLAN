@@ -1,0 +1,11 @@
+flowchart TB
+  RR["Spine / EVPN RR: 10.255.0.1"]
+  A["Leaf A: 10.255.0.11"]
+  B["Leaf B: 10.255.0.12"]
+  HA["Host A: VLAN 100 and 200"]
+  HB["Host B: VLAN 100 and 200"]
+  RR <-->|"10.0.1.0/30; OSPF + iBGP EVPN"| A
+  RR <-->|"10.0.2.0/30; OSPF + iBGP EVPN"| B
+  A --- HA
+  B --- HB
+  A -.->|"VNI 10100 / 10200; UDP 4789"| B
