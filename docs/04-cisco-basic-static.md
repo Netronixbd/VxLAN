@@ -27,7 +27,7 @@ Read the platform gate first. These templates use Nexus NX-OS, not Catalyst IOS 
 
 ## Leaf A complete configuration
 
-Source file: [configs/static/cisco-leaf1.cfg](../configs/static/cisco-leaf1.cfg)
+Source file: [configs/static/cisco-leaf1.md](../configs/static/cisco-leaf1.md)
 
 ```text
 configure terminal
@@ -64,7 +64,7 @@ end
 
 ## Leaf B complete configuration
 
-Source file: [configs/static/cisco-leaf2.cfg](../configs/static/cisco-leaf2.cfg)
+Source file: [configs/static/cisco-leaf2.md](../configs/static/cisco-leaf2.md)
 
 ```text
 configure terminal

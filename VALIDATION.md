@@ -3,11 +3,13 @@
 ## Performed for this package
 
 - Checked file structure, relative Markdown links and code-fence balance.
-- Compared embedded configuration blocks with the matching `.cfg` files.
+- Compared each converted `.md` code block with its original `.cfg` source, preserving the CLI text without modification.
 - Checked static /32 routes, peer address symmetry and lab role consistency.
 - Checked OSPF transport subnets, unique loopbacks/RDs and matching service VNIs/RTs.
 - Reviewed command families against the primary references listed in the documentation.
 - Verified that the ZIP can be read and extracted without errors.
+
+- Updated existing Markdown links to point to the converted configuration guides.
 
 ## Not performed
 

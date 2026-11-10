@@ -27,7 +27,7 @@ Read the platform gate first. These templates use CloudEngine nested bridge-doma
 
 ## Leaf A complete configuration
 
-Source file: [configs/static/huawei-leaf1.cfg](../configs/static/huawei-leaf1.cfg)
+Source file: [configs/static/huawei-leaf1.md](../configs/static/huawei-leaf1.md)
 
 ```text
 system-view
@@ -64,7 +64,7 @@ return
 
 ## Leaf B complete configuration
 
-Source file: [configs/static/huawei-leaf2.cfg](../configs/static/huawei-leaf2.cfg)
+Source file: [configs/static/huawei-leaf2.md](../configs/static/huawei-leaf2.md)
 
 ```text
 system-view

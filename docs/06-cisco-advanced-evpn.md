@@ -30,7 +30,7 @@ Start from a clean topology or a reviewed baseline. Do not paste these commands 
 
 Use this Cisco RR or the other vendor's RR, never both at the same time. No NVE, customer VLAN or VNI is required on the RR in this design.
 
-Source: [configs/evpn/cisco-spine-rr.cfg](../configs/evpn/cisco-spine-rr.cfg)
+Source: [configs/evpn/cisco-spine-rr.md](../configs/evpn/cisco-spine-rr.md)
 
 ```text
 configure terminal
@@ -78,7 +78,7 @@ end
 
 ## Leaf A
 
-Source: [configs/evpn/cisco-leaf1.cfg](../configs/evpn/cisco-leaf1.cfg)
+Source: [configs/evpn/cisco-leaf1.md](../configs/evpn/cisco-leaf1.md)
 
 ```text
 configure terminal
@@ -143,7 +143,7 @@ end
 
 ## Leaf B
 
-Source: [configs/evpn/cisco-leaf2.cfg](../configs/evpn/cisco-leaf2.cfg)
+Source: [configs/evpn/cisco-leaf2.md](../configs/evpn/cisco-leaf2.md)
 
 ```text
 configure terminal

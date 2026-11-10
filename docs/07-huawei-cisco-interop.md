@@ -8,8 +8,8 @@ These are standards-based candidate lab combinations, not a certification of an 
 
 | Role | Select exactly one file |
 |---|---|
-| Huawei Leaf A | [huawei-leaf1.cfg](../configs/static/huawei-leaf1.cfg) |
-| Cisco Leaf B | [cisco-leaf2.cfg](../configs/static/cisco-leaf2.cfg) |
+| Huawei Leaf A | [huawei-leaf1.md](../configs/static/huawei-leaf1.md) |
+| Cisco Leaf B | [cisco-leaf2.md](../configs/static/cisco-leaf2.md) |
 
 Connect Huawei 10GE1/0/1 directly to Cisco Ethernet1/1. Host links use tagged VLAN 100. Verify that Huawei emits the expected inner Ethernet format and that Cisco maps the decoded VNI to VLAN 100. Do not add Q-in-Q or retain-inner-tag settings unless deliberately testing that feature.
 
@@ -19,9 +19,9 @@ The reverse vendor arrangement uses Cisco leaf1 and Huawei leaf2 with the same r
 
 | Role | Default selection | Alternative |
 |---|---|---|
-| Leaf A | [Huawei EVPN leaf1](../configs/evpn/huawei-leaf1.cfg) | [Cisco EVPN leaf1](../configs/evpn/cisco-leaf1.cfg) |
-| Leaf B | [Cisco EVPN leaf2](../configs/evpn/cisco-leaf2.cfg) | [Huawei EVPN leaf2](../configs/evpn/huawei-leaf2.cfg) |
-| Spine/RR | [Cisco RR](../configs/evpn/cisco-spine-rr.cfg) | [Huawei RR](../configs/evpn/huawei-spine-rr.cfg) |
+| Leaf A | [Huawei EVPN leaf1](../configs/evpn/huawei-leaf1.md) | [Cisco EVPN leaf1](../configs/evpn/cisco-leaf1.md) |
+| Leaf B | [Cisco EVPN leaf2](../configs/evpn/cisco-leaf2.md) | [Huawei EVPN leaf2](../configs/evpn/huawei-leaf2.md) |
+| Spine/RR | [Cisco RR](../configs/evpn/cisco-spine-rr.md) | [Huawei RR](../configs/evpn/huawei-spine-rr.md) |
 
 Use one file per role. Leaf A port 1 connects to spine port 1. Leaf B port 1 connects to spine port 2. No direct leaf-to-leaf physical link exists.
 

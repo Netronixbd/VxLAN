@@ -30,7 +30,7 @@ Start from a clean topology or a reviewed baseline. Do not paste these commands 
 
 Use this Huawei RR or the other vendor's RR, never both at the same time. No NVE, customer VLAN or VNI is required on the RR in this design.
 
-Source: [configs/evpn/huawei-spine-rr.cfg](../configs/evpn/huawei-spine-rr.cfg)
+Source: [configs/evpn/huawei-spine-rr.md](../configs/evpn/huawei-spine-rr.md)
 
 ```text
 system-view
@@ -82,7 +82,7 @@ return
 
 ## Leaf A
 
-Source: [configs/evpn/huawei-leaf1.cfg](../configs/evpn/huawei-leaf1.cfg)
+Source: [configs/evpn/huawei-leaf1.md](../configs/evpn/huawei-leaf1.md)
 
 ```text
 system-view
@@ -154,7 +154,7 @@ return
 
 ## Leaf B
 
-Source: [configs/evpn/huawei-leaf2.cfg](../configs/evpn/huawei-leaf2.cfg)
+Source: [configs/evpn/huawei-leaf2.md](../configs/evpn/huawei-leaf2.md)
 
 ```text
 system-view

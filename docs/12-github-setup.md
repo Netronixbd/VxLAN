@@ -6,12 +6,12 @@
 
 | Field | Value |
 |---|---|
-| Repository name / URL slug | `VXLAN-Huawei-Cisco` |
+| Repository name / URL slug | `VxLAN` (current repository) |
 | README display title | `VXLAN [Huawei & Cisco]` |
 | Suggested visibility | Public for sanitized learning material |
 | Initial release tag | `v1.0.0` |
 
-GitHub repository names do not accept spaces, square brackets or ampersands. Use the requested title in the README and the valid slug for the repository URL.
+The existing GitHub repository is `Netronixbd/VxLAN`. Keep the requested `VXLAN [Huawei & Cisco]` title in the README. Repository names do not accept spaces, square brackets or ampersands.
 
 ## Description — copy this
 
@@ -27,12 +27,12 @@ vxlan evpn bgp huawei cloudengine cisco nexus nx-os vrp networking network-engin
 
 ## Browser upload
 
-1. Create a new GitHub repository named `VXLAN-Huawei-Cisco`.
+1. Open the existing repository `https://github.com/Netronixbd/VxLAN`.
 2. Paste the description above. Choose the visibility you want.
-3. Do not auto-create another README; the package already includes one.
-4. Extract `VXLAN-Huawei-Cisco.zip` on your computer.
-5. Open the extracted `VXLAN-Huawei-Cisco` directory.
-6. Use GitHub **Add file → Upload files** and upload its contents, including the `docs`, `configs` and `diagrams` folders. Do not upload only the ZIP or an extra parent folder.
+3. Keep one root `README.md`; the package includes the updated file.
+4. Extract `VXLAN-Huawei-Cisco-Markdown.zip` on your computer.
+5. Open the extracted `VXLAN-Huawei-Cisco` directory inside the package.
+6. You can upload the changed Markdown files through GitHub. **To remove the old `.cfg` files automatically**, the Git workflow below is preferred.
 7. Commit with message `Add Huawei and Cisco VXLAN lab documentation`.
 8. Check README links and rendered Mermaid diagrams. Add topics through the repository About section.
 
@@ -40,18 +40,20 @@ If your browser cannot retain a directory upload, use the Git workflow below.
 
 ## Git upload
 
-After creating an empty repository, run from the extracted project directory. Replace `YOUR_GITHUB_USERNAME` first.
+For the **existing** `Netronixbd/VxLAN` repository, first update your local checkout using `git pull --rebase origin main`; then extract the new ZIP and copy its *contents* into the checkout. Delete the old `.cfg` files before staging. In Git Bash run:
 
 ```bash
-git init
-git add .
-git commit -m "Add Huawei and Cisco VXLAN lab documentation"
-git branch -M main
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/VXLAN-Huawei-Cisco.git
-git push -u origin main
+cd /f/VxLAN/VXLAN-Huawei-Cisco
+git pull --rebase origin main
+# Next, extract the ZIP and copy its files into this directory.
+# Then delete old .cfg files in configs/static and configs/evpn.
+git add -A
+git status
+git commit -m "Convert VXLAN device configs to Markdown guides"
+git push origin main
 ```
 
-Authenticate through your normal GitHub method; no credentials are included in this package. For an existing repository, inspect its current history/remotes and integrate these files normally; do not force-push.
+Authenticate through your normal GitHub method; no credentials are included in this package. Review `git status` before committing. Do not force-push.
 
 ## Optional first release
 

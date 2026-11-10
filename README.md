@@ -76,14 +76,31 @@ Do not merge the static and EVPN files on the same running topology. They use di
 - Exact switch PID, release, license, interface naming, MTU and hardware forwarding support must be confirmed before loading.
 - A successful CLI parse does not prove hardware encapsulation or interoperability.
 
+## Browse the Markdown configuration library
+
+All **10 device configuration templates** have been converted from `.cfg` to GitHub-friendly `.md` guides. They include the unchanged CLI, device role and addressing, prerequisites and verification commands.
+
+**[Open Configuration Library →](configs/README.md)**
+
+| Scenario | Cisco Nexus | Huawei CloudEngine |
+|:--|:--|:--|
+| Static Leaf 1 | [Cisco Leaf 1](configs/static/cisco-leaf1.md) | [Huawei Leaf 1](configs/static/huawei-leaf1.md) |
+| Static Leaf 2 | [Cisco Leaf 2](configs/static/cisco-leaf2.md) | [Huawei Leaf 2](configs/static/huawei-leaf2.md) |
+| EVPN Leaf 1 | [Cisco Leaf 1](configs/evpn/cisco-leaf1.md) | [Huawei Leaf 1](configs/evpn/huawei-leaf1.md) |
+| EVPN Leaf 2 | [Cisco Leaf 2](configs/evpn/cisco-leaf2.md) | [Huawei Leaf 2](configs/evpn/huawei-leaf2.md) |
+| EVPN Spine/RR | [Cisco Spine/RR](configs/evpn/cisco-spine-rr.md) | [Huawei Spine/RR](configs/evpn/huawei-spine-rr.md) |
+
+> [!TIP]
+> For the existing GitHub repository, extract the ZIP and use `git add -A` to stage both the added `.md` files and the deletion of old `.cfg` files.
+
 ## File layout
 
 | Path | Purpose |
 |---|---|
 | `README.md` | Project introduction and navigation |
 | `docs/` | Detailed Markdown guides |
-| `configs/static/` | Four complete static leaf templates |
-| `configs/evpn/` | Four complete EVPN leaf templates and two alternative RRs |
+| [`configs/static/`](configs/README.md) | Four GitHub-ready static leaf configuration guides |
+| [`configs/evpn/`](configs/README.md) | Four EVPN leaf guides and two alternative RR guides |
 | `diagrams/` | Editable Mermaid sources |
 | `VALIDATION.md` | Checks performed and checks still requiring hardware |
 | `CHANGELOG.md` | Release history |

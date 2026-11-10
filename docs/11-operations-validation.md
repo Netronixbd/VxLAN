@@ -4,7 +4,7 @@
 
 ## Loading configuration
 
-The `.cfg` files are terminal command templates, not automation scripts. Use a console or known working management session. Read prerequisites and substitute actual interface names first. Do not paste the Markdown prose or combine both alternatives for one role.
+The `configs/static/*.md` and `configs/evpn/*.md` files are GitHub-readable **configuration guides**. Their fenced `text` blocks contain CLI templates, not automation scripts. Use a console or known working management session. Read prerequisites and substitute actual interface names first. **Copy only the command block**, not Markdown text, and do not combine both alternatives for one role.
 
 Huawei templates use staged VRP `commit`; on immediate-apply releases this command/workflow differs. Inspect the actual OS rather than treating an unknown command as harmless. Cisco configuration commands apply immediately and are not protected by a Junos-style `commit confirmed` workflow.
 
